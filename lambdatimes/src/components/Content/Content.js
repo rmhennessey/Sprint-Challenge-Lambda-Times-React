@@ -5,6 +5,14 @@ import Cards from './Cards';
 
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from '../../data';
+import Carousel from '../Carousel/Carousel';
+import styled from 'styled-components';
+
+const ContentContainerDiv = styled.div `
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+`;
 
 export default class Content extends Component {
   constructor(props) {
@@ -39,10 +47,11 @@ export default class Content extends Component {
 
   render() {
     return (
-      <div className="content-container">
+      <ContentContainerDiv>
         <Tabs tabs={this.state.tabs} selectedTab={this.state.selected} selectTabHandler={this.changeSelected}/>
+        <Carousel />
         <Cards cards={this.filterCards()} />
-      </div>
+      </ContentContainerDiv>
     );
   }
 }

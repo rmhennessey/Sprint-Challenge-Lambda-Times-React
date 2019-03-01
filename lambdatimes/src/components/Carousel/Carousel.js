@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import { carouselData } from '../../data'
 // Complete this Carousel 
+
 export default class Carousel extends Component {
   constructor(props){
     super(props);
     this.state = {
+      carousel: []
 
     }
   }
   componentDidMount(){
+    this.setState({
+      carousel: carouselData
+    })
 
   }
 
@@ -21,7 +26,7 @@ export default class Carousel extends Component {
   }
 
   selectedImage = () => {
-    return <img src={} style={{display: 'block'}} />
+    return <img src="./assets/carousel/mountains.jpeg" style={{display: 'block'}} />
   }
   
   render(){

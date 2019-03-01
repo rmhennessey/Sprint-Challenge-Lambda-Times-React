@@ -29,28 +29,60 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+PropTypes are a way for React Developers to catch possible bugs before they become a big problem. 
+
+If the data is laid out in a specific way and passed around to components via other components, you can think of PropTypes as a way to ensure the type of data being passed around.
+
+
 - [ ] Describe a life-cycle event in React?
+
+The Birth/Mounting Phase
+    This is the phase when the component is being built out from ground up.
+    Whatever initial data you’ll have access too will be defined on the constructor of this phase
+    Your render method is invoked.
+    componentDidMount gets called as well.
+
+Growth/Updating Phase
+    setState can be used to change the component’s state data, forcing a call to render.
+
+
+Death/Un-mounting Phase
+    Component is removed from the screen.
+
+
 - [ ] Explain the details of a Higher Order Component?
+
+Higher order components (HOC) are commonly used as advanced react patterns for designing some components that share some kind of behavior or data in a way that makes them connected differently than just the traditional state -> props pattern. 
+
+An HOC is a function that receives a Component as an argument and returns a new component 
+
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+1.  Inline CSS
+2.  CSS in JS
+3.  Styled-components
+
 
 ## Project Setup
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-- [ ] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
-- [ ] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
+- [x] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
+- [x] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Minimum Viable Product
 
